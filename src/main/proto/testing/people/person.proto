@@ -1,0 +1,12 @@
+syntax = "proto2";
+package testing.people;
+option java_package = "com.testing.people";
+
+import "testing/tastes/tastes.proto";
+
+message WirePerson {
+
+    optional string name = 1;
+    repeated string picture_urls = 2;
+    optional testing.tastes.WirePersonTaste period = 5;
+}

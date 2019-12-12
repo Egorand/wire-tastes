@@ -1,0 +1,8 @@
+syntax = "proto2";
+package testing.tastes;
+option java_package = "com.testing.tastes";
+
+message WirePersonTaste {
+    optional string taste = 1;
+    repeated string picture_urls = 2;
+}
